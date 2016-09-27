@@ -1,0 +1,35 @@
+//busqueda secuencial
+//a[5]= {3,2,1,4,5} dato = 4
+#include <stdio.h>
+#include <conio.h>
+
+int main()
+{
+    int a[5] = {3,2,1,4,5};
+    char band = 'F';
+    int i, dato;
+    
+    dato = 4;
+    
+    //busqueda secuencial
+    i=0;
+    while((band=='F')&&(i<5)){
+    if (a[i]==dato){
+        band = 'V';            
+                    
+    }                          
+     i++;                         
+    }
+    
+    if(band == 'F'){
+    printf("el numero no existe en el Array");        
+            
+    }
+    
+    else if(band == 'V'){
+         printf("el numero existe,posicion: %i",i-1);
+         
+    }
+getch();    
+return 0;
+}

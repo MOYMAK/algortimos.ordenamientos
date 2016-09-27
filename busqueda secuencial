@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+#define MAX 5
+void main() {
+int a [MAX], i;
+clrscr();
+printf("Lenando arreglo con 5 numeros \n");
+for(i=0; i< MAX; i++)
+  {
+printf("introduzca un numero ");
+scanf("%d",&a [i]); }
+
